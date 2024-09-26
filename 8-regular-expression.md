@@ -1,12 +1,18 @@
-### 컴파일 옵션 <sup>367</sup>
+# 8장 정규 표현식
+## 8-2 정규 표현식 시작하기
+
+#### 컴파일 옵션 <sup>367</sup>
 
 - DOTALL S : .이 줄바꿈 문자 \n를 포함해 모든 문자와 매치
 - IGNORECASE I : 대소문자에 관계없이
 - MUTILINE M : 여러줄과 매치 ^ $ 메타문자 사용과 관계
 - VERBOSE X : verbose 모드. 정규식을 보기 편하게 만들고 주석 사용 가능
 
-##### DOTALL, S
-##### MULTILINE, M <sup>369</sup>
+##### DOTALL S
+
+##### IGNORECASE I
+
+##### MULTILINE M <sup>369</sup>
 메타 문자인 ^, $과 연관된 옵션
 
 ^는 문자열의 처음, $는 문자열의 마지막
@@ -41,7 +47,7 @@ print(p.findall(data))
 ```
 ['python one', 'python two', 'python three']
 ```
-##### VERBOSE, X
+##### VERBOSE X
 정규식을 주석 또는 줄단위로 구분할 수 있는 옵션
 ```
 p = compile(r'&[#](0[0-7]+|[0-9]+|x[0-9a-fA-F]+);')
@@ -58,6 +64,7 @@ p = compile(r"""
             ;               # trailing semicolon
             """, X)
 ```
+
 #### 역슬래시 문제
 예를 들어 \section 문자열을 찾기 위한 정규식을 만들때
 `\section` 는 \s 문자가 whitespace로 해석되어 `[\t\n\r\f\v]ection` 으로 읽어져서 `\\section` 이라고 해야함
