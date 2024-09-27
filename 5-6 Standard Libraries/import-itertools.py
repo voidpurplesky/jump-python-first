@@ -33,5 +33,5 @@ print(list(combinations(['a', 'b', 'c'], 2)))
 
 #로또 1~45 중 6개
 print(len(list(combinations(range(1, 46), 6))))
-
+# 8145060
 

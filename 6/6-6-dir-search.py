@@ -1,4 +1,4 @@
-from os import listdir, path
+from os import listdir, path, walk
 
 def search(dirname):
     try:
@@ -15,5 +15,9 @@ def search(dirname):
                     print(full_filename)
     except PermissionError:
         pass
-    
-search("c:/")
+
+#search("c:/")
+
+for (p, dir, files) in walk("d:/"):
+    for filename in files:
+        ext = path.splitext

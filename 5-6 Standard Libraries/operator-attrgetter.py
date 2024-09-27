@@ -24,9 +24,15 @@ for i in result:
     print(i)
 
 '''
+def __str__(self):
+        return str(self.name)
 sally
 jane
 dave
+
+('sally', 17)
+('jane', 22)
+('dave', 32)
 '''
 
 for i in result:

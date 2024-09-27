@@ -17,3 +17,8 @@ def two_times(x):
 print(list(map(two_times, [1,2,3,4])))
 
 print(list(map(lambda a: a * 2, [1,2,3,4])))
+
+# join * list 요소가 int일때 string으로 변환하여야할떄 map 사용
+# list 요소의 값을 모두 string으로 변환할때 map functin에 str 사용
+l = [1,2,3,4,5]
+print(" ".join(map(str,l)))

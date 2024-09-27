@@ -75,7 +75,18 @@ func()
 func(1,2,3,name='foo',age='3')
 func(name='foo',age=3)
 func(1,2,3)
-
+#func(name='foo', 1,2 3) 형태는 안됨
+'''
+*args, **kwargs
+()
+{}
+(1, 2, 3)
+{'name': 'foo', 'age': '3'}
+()
+{'name': 'foo', 'age': 3}
+(1, 2, 3)
+{}
+'''
 # 함수의 리턴값은 언제나 하나
 def add_and_mul(a, b):
     return a + b, a * b

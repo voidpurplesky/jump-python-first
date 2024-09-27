@@ -53,4 +53,5 @@ print(s)
 l = [1,1,1,1,2,2,2,1,3,3,3,1,2]
 print(set(l)) #{1, 2, 3}
 
-print(list(set(l)))
+# set을 list로
+print(list(set(l))) #[1, 2, 3]

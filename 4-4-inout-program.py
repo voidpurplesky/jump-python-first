@@ -5,3 +5,9 @@ import sys
 args = sys.argv[1:]
 for i in args:
     print(i)
+'''
+D:\cmj\workspaces\python> python 4-4-inout-program.py aaa bbb ccc
+aaa
+bbb
+ccc
+'''

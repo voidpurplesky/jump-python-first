@@ -43,3 +43,20 @@ print(p.findall(data)) #['python one']
 
 p = compile("^python\s\w+", M)
 print(p.findall(data)) #['python one']
+
+##### VERBOSE, X
+'''정규식을 주석 또는 줄단위로 구분할 수 있는 옵션'''
+p = compile(r'&[#](0[0-7]+|[0-9]+|x[0-9a-fA-F]+);')
+
+p = compile(r"""
+            &[#]            # Start of a numeric entity reference
+            (
+            0[0-7]+         # Octal form
+            |[0-9]+         # Decimal form
+            |x[0-9a-fA-F]+  # Hexadecimal form
+            )
+            ;               # trailing semicolon
+            """, X)
+
+#### 역슬래시 문제
+p = compile(r'\\section')

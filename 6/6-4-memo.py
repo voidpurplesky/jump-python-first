@@ -1,3 +1,8 @@
+'''
+& C:/Python312/python.exe d:/cmj/workspaces/python/6/6-4-memo.py -w "Life is too short"
+& C:/Python312/python.exe d:/cmj/workspaces/python/6/6-4-memo.py -r
+& C:/Python312/python.exe d:/cmj/workspaces/python/6/6-4-memo.py -a "dddddddddddddddddd"
+'''
 import sys
 option = sys.argv[1]
 

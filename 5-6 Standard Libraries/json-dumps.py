@@ -8,3 +8,4 @@ print(json_data)
 
 # json>dic
 print(loads(json_data))
+#{'name': '홍길동', 'birth': '0525', 'age': 30}

@@ -33,4 +33,18 @@ working:0
 working:0
 
 working:0
+
+--- join 추가후
+start
+working:0
+working:0
+
+working:0
+
+working:0
+
+
+working:0
+
+end
 '''

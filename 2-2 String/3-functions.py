@@ -12,10 +12,14 @@ print(s.find("AB")) # 0
 # 위치 알려주기 2 - index 없으면 에러
 print(s.index("A"))
 
-# 문자열 삽입 - join
+# join() : 문자열 삽입
 print(",".join('abcd')) #a,b,c,d
 #리스트,튜플도
 print(",".join(['a', 'b', 'c', 'd']))
+
+# join * list 요소가 int일때 string으로 변환하여야됨
+l = [1,2,3,4,5]
+print(" ".join(map(str,l)))
 
 print(s.upper()) # ABCDABCD
 print(s.lower())

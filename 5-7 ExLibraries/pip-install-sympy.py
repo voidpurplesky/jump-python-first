@@ -39,4 +39,4 @@ x - y = 4
 x, y = symbols('x y')
 f1 = Eq(x + y, 10)
 f2 = Eq(x - y, 4)
-print(solve([f1, f2]))
+print(solve([f1, f2])) #{x: 7, y: 3}

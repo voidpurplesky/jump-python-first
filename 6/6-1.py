@@ -34,6 +34,7 @@ def gugu3(number):
     for i in range(1,10):
         result.append(number * i)
     str1 = ("%s단 : " % number) + (" ".join(map(str,result)))
+    #TypeError: sequence item 0: expected str instance, int found
     return str1 
 
 print(gugu3(3))

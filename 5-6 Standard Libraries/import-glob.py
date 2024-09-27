@@ -7,6 +7,10 @@ print(glob("c:/*"))
 
 '''
 ['c:/$Recycle.Bin', 'c:/$WinREAgent', 'c:/AMTAG.BIN', 
+
+'c:/Update.ini', 'c:/Users', 'c:/webserver', 'c:/Windows', 'c:/XecureSSL', 'c:/컴활수업']
+
 '''
 
-print(glob("c:/*.ini"))
+print(glob("c:/*.ini")) #['c:/Update.ini']
+

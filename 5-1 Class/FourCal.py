@@ -22,3 +22,5 @@ print(fourCal.add())
 fourCal2 = FourCal()
 print(fourCal2.add()) # 0
 
+#TypeError: FourCal.__init__() missing 2 required positional arguments: 'num1' and 'num2'
+

@@ -5,5 +5,8 @@ a = input('input string:')
 print('hi' 'hi') #hihi
 print('hi', 'hi') #hi hi
 
+print("[", end="")
+print(end=" ")
+print("]", end="")
 
 
